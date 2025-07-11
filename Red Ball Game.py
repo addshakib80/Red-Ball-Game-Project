@@ -145,15 +145,6 @@ def midpoint_circle(cx, cy, r):
 
     return points
 
-# def draw_circle(cx, cy, r, color, segments=100):
-#     glColor3f(*color)
-#     glBegin(GL_LINE_LOOP)  # Use GL_POLYGON for filled circle
-#     for i in range(segments):
-#         theta = 2.0 * math.pi * i / segments
-#         x = cx + r * math.cos(theta)
-#         y = cy + r * math.sin(theta)
-#         glVertex2f(x, y)
-#     glEnd()
 
 def draw_circle(cx, cy, r, color):
     glColor3f(*color)
@@ -173,15 +164,6 @@ def draw_ellipse(xc, yc, a, b, color):
         glVertex2f(x, y)
     glEnd()
 
-# def draw_ellipse(xc, yc, a, b, color, segments=100):
-#     glColor3f(*color)
-#     glBegin(GL_LINE_LOOP)  # use GL_POLYGON if you want a filled ellipse
-#     for i in range(segments):
-#         theta = 2.0 * math.pi * i / segments
-#         x = xc + a * math.cos(theta)
-#         y = yc + b * math.sin(theta)
-#         glVertex2f(x, y)
-#     glEnd()
 
 def toggle_eyes(value):
     global eye_open, game_over, pause
